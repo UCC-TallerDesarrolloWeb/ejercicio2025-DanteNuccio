@@ -16,28 +16,48 @@
 
 <!--Si tienes dudas de como hacer un formulario, puedes consultar:
     https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output-->
-
 <h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
-Nombre:
-Apellido:
-Sexo: Masculino Femenino
-Edad:
-Email:
-Usuario:
-Password:
-Confirmar Password:
+<figcaption>Persona:
+    <label for="nombre">Nombre:</label>   
+    <input type="text" id="nombre" name="nombre" value="" size="30" maxlength="30" placeholder="Ingrese su Nombre">
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" value="" size="30" maxlength="30" placeholder="Ingrese su Apellido">
+    <label for="sexo">Sexo:</label>
+    <input type="radio" id="masculino" name="sexo" value="masculino">
+    <label for="masculino">Masculino</label>
+    <input type="radio" id="femenino" name="sexo" value="femenino">
+    <label for="femenino">Femenino</label>
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" value="" size="3" maxlength="3" placeholder="Ingrese su Edad">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" value="" size="30" maxlength="30" placeholder="Ingrese su Email">
+    <label for="usuario">Usuario:</label>
+    <input type="text" id="usuario" name="usuario" value="" size="30" maxlength="30" placeholder="Ingrese su Usuario">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" value="" size="30" maxlength="30" placeholder="Ingrese su Password">
+   <label for="Confirmar password">Confirmar Password:</label>
+    <input type="password" id="confirmar password" name="confirmar password" value="" size="30" maxlength="30" placeholder="Confirme su Password">
+</figcaption>
+    <label for="tipo de servicio">Tipo de servicio:</label>
+    <select id="tipo de servicio" name="tipo de servicio">
+        <option value="free">Free</option>
+        <option value="standard">Standard</option>
+        <option value="premium">Premium</option>
+    </select>
+ <figcaption>Intereses:   
+    <label for="tema">Tema:</label>
+    <s="tema" name="tema">
+        <option value="politica">Política</option>
+        <option value="negocios">Negocios</option>
+        <option value="tecnologia">Tecnología</option>
+        <option value="salud">Salud</option>
+    </select>
+</figcaption>
 
-Tipo de servicio: Free / Standard / Premium
-Tema:
-Política
-Negocios
-Tecnología
-Salud
-
-Agregue un comentario:
-
-Boton de Enviar
-
-
+<figcaption> 
+<label for="comentario">Agregue un comentario:</label>
+    <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Escriba su comentario aquí..."></textarea>
+    <input type="submit" value="Enviar">
+</figcaption>   
 </body>
 </html>
